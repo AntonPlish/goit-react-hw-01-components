@@ -1,0 +1,7 @@
+.tabletd {
+    padding: 5px 5px 5px 5px;
+}
+
+.tabletr:nth-child(even) {
+    background-color: #fff;
+}
