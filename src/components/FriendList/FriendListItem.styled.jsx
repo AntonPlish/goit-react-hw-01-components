@@ -19,3 +19,23 @@ border-radius: 100%;
 background-color: ${setBgColor};
 margin-right: 10px;
 `;
+
+export const Item = styled.li`
+    display: flex;
+    height: 50px;
+    width: 250px;
+    align-items: center;
+    background-color: #fff;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 2px;
+    box-shadow: 2px 2px 2px 2px grey;
+    margin-left: auto;
+    margin-right: auto;
+`;
+
+export const Name = styled.p`
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0 0 0 10px;
+`;

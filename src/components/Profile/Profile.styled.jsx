@@ -1,4 +1,6 @@
-.profile {
+import styled from '@emotion/styled'
+
+export const Profiles = styled.div`
     position: relative;
     background-color: white;
     height: 450px;
@@ -8,9 +10,9 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 25px;
-}
+`;
 
-.avatar {
+export const Avatar = styled.img`
     display: block;
     border-radius: 100%;
     width: 150px;
@@ -19,32 +21,32 @@
     margin-left: auto;
     margin-right: auto;
     padding-top: 20px;
-}
+`;
 
-.name {
+export const Name = styled.p`
     text-align: center;
     font-size: 32px;
     font-weight: 500;
     margin-top: 20px;
     margin-bottom: 20px;
-}
+`;
 
-.tag {
+export const Tag = styled.p`
     text-align: center;
     font-size: 20px;
     color: rgb(79, 79, 79);
     font-weight: 500;
-}
+`;
 
-.location {
+export const Location = styled.p`
     text-align: center;
     font-size: 20px;
     color: rgb(79, 79, 79);
     font-weight: 500;
     margin-bottom: 30px;
-}
+`;
 
-.stats {
+export const Stats = styled.ul`
     position: absolute;
     background-color: rgb(176, 176, 176);
     list-style: none;
@@ -55,31 +57,29 @@
     width: 100%;
     border-radius: 0 0 5px 5px;
     bottom: 0;
-}
+`;
 
-.statsitem {
+export const Statsitem = styled.li`
     width: 100px;
     height: 100px;
     border-top: 1px solid grey;
-}
+        &:nth-of-type(2):
+        border-left: 1px solid grey;
+        border-right: 1px solid grey;
+`;
 
-.statsitem:nth-child(2) {
-    border-left: 1px solid grey;
-    border-right: 1px solid grey;
-}
-
-.label {
+export const Label = styled.span`
     display: block;
     font-size: 18px;
     text-align: center;
     margin: 20px 0 0 0;
     padding: 0;
-}
+`;
 
-.quantity {
+export const Quantity = styled.span`
     display: block;
     font-size: 18px;
     text-align: center;
     margin: 10px 0 0 0;
     font-weight: 700;
-}
+`;

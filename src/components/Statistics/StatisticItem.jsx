@@ -1,11 +1,11 @@
-import css from './StatisticItem.module.css'
+import { Item, Label, Percentage } from './StatisticItem.styled';
 const randomColor = require('randomcolor'); 
 
 export default function StatisticItem({ label, percentage }) {
     let color = randomColor();
-    return (<li className={css.item} style={{ backgroundColor: color, width: "100%", height: '100%',}}>
-        <span className={css.label}>{label}</span>
-        <span className={css.percentage}>{percentage}%</span>
-    </li>
+    return (<Item style={{ backgroundColor: color, width: "100%", height: '100%',}}>
+        <Label>{label}</Label>
+        <Percentage>{percentage}%</Percentage>
+    </Item>
     );
 };

@@ -1,12 +1,10 @@
-import css from './TransactionHistoryItem.module.css'
+import { Tabletr, Tabletd } from './TransactionHistoryItem.styled';
 
 export default function TransactionHistoryItem({ type, amount, currency }) {
-    return (<tbody>
-        <tr className={css.tabletr}>
-            <td className={css.tabletd}>{type}</td>
-            <td className={css.tabletd}>{amount}</td>
-            <td className={css.tabletd}>{currency}</td>
-        </tr>
-    </tbody>
+    return (<Tabletr>
+            <Tabletd>{type}</Tabletd>
+            <Tabletd>{amount}</Tabletd>
+            <Tabletd>{currency}</Tabletd>
+        </Tabletr>
     );
 };
