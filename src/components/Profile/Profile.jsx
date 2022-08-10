@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
 import { Profiles, Avatar, Name, Tag, Location, Stats, Statsitem, Label, Quantity } from './Profile.styled'
-
+import { Box } from 'components/Box'
 
 export const Profile = ({ avatar, username, tag, location, followers, views, likes}) => {
     return <Profiles>
-        <div>
+        <Box display="block" position="relative">
             <Avatar
                 src={avatar}
                 alt="User avatar"
@@ -12,7 +12,7 @@ export const Profile = ({ avatar, username, tag, location, followers, views, lik
             <Name>{username}</Name>
             <Tag>@{tag}</Tag>
             <Location>{location}</Location>
-        </div>
+        </Box>
         
         <Stats>
             <Statsitem>

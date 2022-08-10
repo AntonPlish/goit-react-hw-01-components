@@ -17,7 +17,7 @@ width: 20px;
 height: 20px;
 border-radius: 100%;
 background-color: ${setBgColor};
-margin-right: 10px;
+margin-right: ${props => props.theme.space[3]}px;
 `;
 
 export const Item = styled.li`
@@ -25,9 +25,9 @@ export const Item = styled.li`
     height: 50px;
     width: 250px;
     align-items: center;
-    background-color: #fff;
-    margin-bottom: 15px;
-    padding: 10px;
+    background-color: ${props => props.theme.colors.background};
+    margin-bottom: ${props => props.theme.space[4]}px;
+    padding: ${props => props.theme.space[3]}px ${props => props.theme.space[4]}px ${props => props.theme.space[3]}px ${props => props.theme.space[4]}px;
     border-radius: 2px;
     box-shadow: 2px 2px 2px 2px grey;
     margin-left: auto;
@@ -35,7 +35,7 @@ export const Item = styled.li`
 `;
 
 export const Name = styled.p`
-    font-size: 24px;
-    font-weight: 500;
-    margin: 0 0 0 10px;
+    font-size: ${props => props.theme.fontSizes.m};
+    font-weight: ${props => props.theme.fontWeights.normal};
+    margin: 0 0 0 ${props => props.theme.space[3]}px;
 `;
